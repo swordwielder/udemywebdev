@@ -1,0 +1,9 @@
+Mongoose is
+
+ODM - Object Data Mapper/ Object Document Mapper
+
+ODM like mongoose map documents coming from database into usable javascript objects
+
+for sql 
+ORM - Object relation(al) Mapper
+

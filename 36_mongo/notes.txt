@@ -1,0 +1,11 @@
+BSON - binary json
+
+db.dogs.find({age:9})
+
+$eq = equal
+$gte = greater than or equal to
+$lt = less than
+db.dogs.find({'personality.childFriendly': true})
+
+db.dogs.find({breed: {$in: ['Mutt', 'Corgi']}})
+db.dogs.find({age: {$gt:8exit}})
