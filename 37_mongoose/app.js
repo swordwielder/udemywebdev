@@ -42,3 +42,7 @@ Movie.findById('5fdce04b93470da9dc7bdb02')
 .then(m => console.log(m))
 
 Movie.updateMany({title: {$in:['star wars', 'Stand by me']}}, {score:10}).then( res => console.log(res))
+
+
+
+Movie.deleteMany({year: {$gte:1999}})
