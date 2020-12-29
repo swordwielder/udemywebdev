@@ -15,11 +15,30 @@ mongoose.connect('mongodb://localhost:27017/farmStand', {useNewUrlParser: true, 
     console.log(err)
   })
 
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true}));
 app.use(methodOverride('_method'));
+
+//Farm routes
+// app.get('/farms', async (req,res) => {
+//   const farms = Farm.find({});
+//   res.render('farms/index', {farms})
+// })
+
+// app.get('farms/new', (req,res) => {
+//   res.render('farms/new')
+// })
+
+// app.post('/farms', async (req,res) => {
+//   const farm = new Farm(req.body);
+//   await farm.save()
+//   res.redirect('/farms')
+//   //res.send(req.body)
+// })
+
+
+//products routes
 
 app.get('/products', async (req,res) => {
   const { category } = req.query;
