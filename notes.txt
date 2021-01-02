@@ -1,2 +1,24 @@
 https://unsplash.com/
 is a image website
+
+REST is an "architectural style for distributed hypermedia systes"
+
+basically a set of guidelines for how a client
+and server should communicate and perform CRUD
+Operations on a given resource
+
+The main idea of REST is treating data on the server side
+as resources that can be CRUDed
+
+The most common way of approaching REST is in formatting the URLs
+and HTTP verbs in your applications.
+
+
+
+GET /comments - list all comments
+POST /comments - create a new comments
+GET /comments/id - get one comment (using id)
+PATCH(PUT) /comments/:id  - update one comment
+PUT(replaces all)
+PATCH(replace partial)
+DELETE /comments/:id - destory one comment

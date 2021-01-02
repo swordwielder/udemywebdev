@@ -28,16 +28,9 @@ const productSchema = new Schema({
 //     {name: 'Sugar watermelon', price: 3.99, season: 'Summer'},
 //     {name: 'asparagus', price: 5.99, season: 'Spring'}
 // ])
-const userSchema = new Schema({
-    username: String,
-    age:Number
-})
 
-const tweetSchema = new Schema({
-    text: String,
-    likes: Number,
-    user: { type: Schema.Types.ObjectId, ref: 'User'}
-})
+
+
 
 const farmSchema = new Schema({
     name: String,
@@ -49,18 +42,7 @@ const farmSchema = new Schema({
 })
 
 const User = mongoose.model('User', userSchema);
-const Tweet = mongoose.model('Tweet', tweetSchema);
 
-
-const makeTweets = async () => {
-    const user = new User({username: 'chickenfan99', age: 61})
-    const tweet1 = new Tweet({ text: 'random i like turtles', likes: 0})
-    tweet1.user = user;
-    user.save()
-    tweet1.save()
-}
-
-makeTweets()
 
 // const Product = mongoose.model('Product', productSchema);
 // const Farm = mongoose.model('Farm', farmSchema);

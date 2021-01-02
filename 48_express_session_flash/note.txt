@@ -1,0 +1,11 @@
+session - sessions are server side data 
+store that we use to make HTTP stateful.  Instead
+of storing data using cookies, we store the
+data on the server side and then send the browser a
+cookie that can be used to retrieve the data.
+
+connect-flash
+
+flash is a special area of the session used for storing messages
+(success message)
+(confirmation)
