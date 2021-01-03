@@ -1,0 +1,3 @@
+authorization, what they have access to
+
+authentication, verify who they are
