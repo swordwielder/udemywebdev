@@ -29,6 +29,7 @@ const requireLogin = (req, res, next) => {
     }
     next();
 }
+
 app.get('/', (req, res) => {
     res.send('THIS IS THE HOME PAGE')
 })
@@ -48,6 +49,7 @@ app.post('/register', async (req, res) => {
 app.get('/login', (req, res) => {
     res.render('login')
 })
+
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
     const foundUser = await User.findAndValidate(username, password);
