@@ -14,6 +14,15 @@ The most common way of approaching REST is in formatting the URLs
 and HTTP verbs in your applications.
 
 
+*******
+API - any interface that for one computer to interact or communicate
+one software to interact with another software
+
+web api - interface that is web based http based 
+they expose certain end point, these end point that are exposed
+are going to respond with information for code or software to consum
+portal into different application or database somewhere
+*********
 
 GET /comments - list all comments
 POST /comments - create a new comments
@@ -22,3 +31,10 @@ PATCH(PUT) /comments/:id  - update one comment
 PUT(replaces all)
 PATCH(replace partial)
 DELETE /comments/:id - destory one comment
+
+
+MVC - approach to structure applications
+put all data heavy studd in models, 
+
+controller - structure heart of the applications
+and rendering views 
