@@ -20,7 +20,7 @@ one software to interact with another software
 
 web api - interface that is web based http based 
 they expose certain end point, these end point that are exposed
-are going to respond with information for code or software to consum
+are going to respond with information for code or software to consume
 portal into different application or database somewhere
 *********
 
